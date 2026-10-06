@@ -39,7 +39,7 @@ Be aware that the app does not work in _safe mode_.
 ## Permissions
 
 * ACCESSIBILITY - listen for a duress password on the lockscreen
-* DEVICE_ADMIN - wipe the device (optional)
+* [Dhizuku](https://github.com/iamr0s/Dhizuku) API permission - wipe the device (optional, requires Dhizuku installed and activated)
 
 ## Localization
 
