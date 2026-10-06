@@ -189,7 +189,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun setOff() {
         prefs.isEnabled = false
-        try { admin.remove() } catch (exc: SecurityException) {}
         binding.toggle.isChecked = false
     }
 
@@ -225,7 +224,7 @@ class MainActivity : AppCompatActivity() {
     private fun requestAccessibilityPermission() =
         startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
 
-    private fun requestAdminPermission() = startActivity(admin.makeRequestIntent())
+    private fun requestAdminPermission() = admin.requestPermission {}
 
     private fun hasPermissions(): Boolean {
         var ok = hasAccessibilityPermission()
